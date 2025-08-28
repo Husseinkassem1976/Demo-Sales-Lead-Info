@@ -12,7 +12,7 @@ app.use(express.static(__dirname + "/scripts"));
 
 // index page
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   //Getting fresh data
   newData = data;
   if (typeof req.query.name !== "undefined") {
